@@ -13,18 +13,25 @@
 # under the License.
 
 # Facebook Application ID and Secret.
-FACEBOOK_APP_ID = '282402218455670'
-FACEBOOK_APP_SECRET = 'f867aae2ed1734119486618ff6fc386b'
+FACEBOOK_APP_ID = '225830947474970'
+FACEBOOK_APP_SECRET = '91b719a83500178f5b727ebe1b001955'
+
+FACEBOOK_CANVAS_URL = 'http://apps.facebook.com/fabpica'
 
 # Canvas Page name.
-FACEBOOK_CANVAS_NAME = 'fbawesomecovers'
+FACEBOOK_CANVAS_NAME = 'fabpica'
 
 # A random token for use with the Real-time API.
 FACEBOOK_REALTIME_VERIFY_TOKEN = 'RANDOM TOKEN'
 
 # The external URL this application is available at where the Real-time API will
 # send it's pings.
-EXTERNAL_HREF = 'http://fbawesomecovers.appspot.com/'
+EXTERNAL_HREF = 'http://fabpica.appspot.com/'
+
+APP_HREF = 'http://localhost:8081/fb/'
 
 # Facebook User IDs of admins. The poor mans admin system.
 ADMIN_USER_IDS = ['5526183']
+
+# The album in facebook used to stored the created covers
+FACEBOOK_ALBUMNAME = 'Fabpica Covers'

@@ -1,0 +1,19 @@
+{% extends "fbbase.html" %}
+
+{% block body %}
+{% if logged_in_user %}
+	{% comment %}
+	{# if the user logged in, present the contents here
+		some ideas about contents here:
+		- action such as create new cover
+		- recent friends' content, if none, show invitation button
+		- new cool effects, or promotions
+		- seasonal based contents 
+	#}
+	{% endcomment %}
+	
+	<div><a href='{{app_href}}createcover'>Create awesome cover here</a></div>
+{% else %}
+	User not logged in
+{% endif %}
+{% endblock %}

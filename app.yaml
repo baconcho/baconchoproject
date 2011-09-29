@@ -1,4 +1,4 @@
-application: fbawesomecovers
+application: fabpica
 version: 1
 runtime: python
 api_version: 1
@@ -9,8 +9,11 @@ handlers:
   upload: static/.*
   expiration: "1d"
 
-- url: .*
-  script: main.py
+- url: /.*
+  script: fb_router.py
+
+- url: /fb/.*
+  script: fb_router.py
 
 - url: /task/.*
   script: main.py

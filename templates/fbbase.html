@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<meta charset="utf-8">
+	<title>Create the most awesome Facebook cover of your own</title>
+	<meta name="description" content="Create the greatest Facebook Profile Cover, ever!!">
+</head>
+<body> 
+	
+	<div id='header'>
+		{% if logged_in_user %}
+      		<p><a href=""><img src="http://graph.facebook.com/{{ logged_in_user.user_id }}/picture?type=square"/></a></p>
+      		<p>Hello, {{ logged_in_user.name }}</p>
+      	{% else %}
+      		<p>Log in with your facebook account to create an awesome cover for your timeline</p>
+      		{% include "fbLoginButton.html" %}
+    	{% endif %}
+	</div>
+	<div id='content'>
+		{% block body %}
+		{% endblock %}
+	</div>
+	<div id='footer'>
+	</div>
+	{% include "fbauth.html" %}
+</body>
+</html>
